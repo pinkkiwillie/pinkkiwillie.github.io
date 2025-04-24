@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9fdfb;
+  }
+  
+  h1 {
+    color: rgb(38, 129, 65);
+    font-weight: 700;
+  }
+  
+  nav {
+    background-color: rgb(252, 252, 252);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 48px;
+    flex-wrap: wrap;
+    row-gap: 16px;
+  }
+  
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  
+  nav div img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  
+  nav ul {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    list-style: none;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: rgb(38, 129, 65);
+    font-weight: 600;
+    font-size: 16px;
+    transition: all 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: rgb(155, 245, 170);
+    border-bottom: 2px solid rgb(155, 245, 170);
+  }
+/*aksi nyata banget nich*/
+
+.aksi-back{
+    background: linear-gradient(to bottom, #b9dec2, #ffffff);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.aksi {
+    padding: 40px 20px;
+    text-align: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.deskripsi {
+    color: #2a2929;
+    font-size: 20px;
+    max-width: 700px;
+    margin: 0 auto 50px auto;
+}
+
+.aksi-aksi {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.aksii {
+    display: flex;
+    flex-direction: column;
+    background: #eeeded;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.05);
+    padding: 20px;
+    width: 100%;
+    max-width: 250px;
+    text-align: center;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+
+.aksi h2 {
+    font-size: 2.5rem;
+    color: #2b5d34;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.aksii img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.aksii:hover {
+    background-color: #174d1f;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+    color: white;
+}
+
+
+.aksii:hover h3,
+.aksii:hover p {
+    color: white;
+}
+
+
+/*kegiatan*/
+.grid-kegiatan {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 24px;
+}
+
+.kegiatan {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.kegiatan img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+
+.content {
+    padding: 16px;
+}
+
+.content h3 {
+    font-size: 16px;
+    margin: 0 0 8px 0;
+}
+
+.content p {
+    font-size: 14px;
+    color: #777;
+    margin: 0;
+}
+
+.kegiatan:hover {
+    background-color: #174d1f;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+    color: white;
+}
+
+.kegiatan:hover h3,
+.kegiatan:hover p {
+    color: white;
+}
+
+/*footer*/
+footer {
+    background-color: #b4e197;
+    text-align: center;
+    place-items: center;
+    padding: 5px 0;
+    font-size: 15px;  
+    color: #1f3a2f;
+}
